@@ -11,10 +11,11 @@ cuDNN 7.0.5
 - then instell developer
 
 ### setup
+https://www.digitalocean.com/community/tutorials/how-to-install-and-use-tensorflow-on-ubuntu-16-04  
 ```
 mkdir ~/tf-demo
 cd ~/tf-demo
-python -m venv tensorflow-dev
+python3 -m venv tensorflow-dev
 ```
 
 ### resume
