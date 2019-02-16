@@ -16,6 +16,10 @@ https://www.digitalocean.com/community/tutorials/how-to-install-and-use-tensorfl
 mkdir ~/tf-demo
 cd ~/tf-demo
 python3 -m venv tensorflow-dev
+pip3 install --upgrade tensorflow-gpu
+python #(3.5.2)
+>>> import tensorflow as tf
+
 ```
 
 ### resume
