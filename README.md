@@ -12,6 +12,10 @@ cuDNN 7.0.5
 
 ### setup
 https://www.digitalocean.com/community/tutorials/how-to-install-and-use-tensorflow-on-ubuntu-16-04  
+
+XPS 8100 does not support AVX Instructions on the CPU - and aborts on import tensorflow  
+XPS 8930 
+
 ```
 mkdir ~/tf-demo
 cd ~/tf-demo
