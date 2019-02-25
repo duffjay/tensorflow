@@ -57,3 +57,9 @@ python3   # I'm on Python 3.5.2
 
 ```
 
+### Running this software
+Clone to ~/projects  
+
+You might have to adjust batch size  
+Use this NVIDIA program to monitor GPU memory.  E.g. my GPU has 6 GB and there were memory allocation errors.  (decrease batch size)  
+$ nvidia-smi  -l 1
