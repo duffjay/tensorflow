@@ -34,20 +34,25 @@ then install the patches (1,2,3,4)
 
 
 ### Python Setup
-NOT using Anaconda.  Using virtualenv
+NOT using Anaconda.  Using virtualenv & virtualenvwrapper
 
 ### TensorFlow setup
 https://www.digitalocean.com/community/tutorials/how-to-install-and-use-tensorflow-on-ubuntu-16-04  
 
-XPS 8100 does not support AVX Instructions on the CPU - and aborts on import tensorflow; may need to build from source.  
-XPS 8930 - Ubuntu 18.04 presents some extra challenges
+XPS 8100 (i7-860, GTX 1050) does not support AVX Instructions on the CPU - and aborts on import tensorflow; may need to build from source.  
+XPS 8930 (i7-8700, GTX 1080) - Ubuntu 18.04 presents some extra challenges
+CFA Dell Inspiron - (i7, GTX 1060m) Ubuntu 16.04
 
 ```
-mkdir ~/tf-demo
-cd ~/tf-demo
-python3 -m venv tensorflow-dev
-pip3 install --upgrade tensorflow-gpu
-python #(3.5.2)
+mkvirtualenv tgpu   # tgpu = tensorflow w/ gpu & CUDA
+# you should have (tgpu) at the beginning of your prompt
+
+# you only need to install once
+pip install --upgrade tensorflow-gpu
+
+# (after installing the first time)
+# workon tgpu 
+python3   # I'm on Python 3.5.2
 >>> import tensorflow as tf
 
 ```
