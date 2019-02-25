@@ -57,9 +57,3 @@ python3   # I'm on Python 3.5.2
 
 ```
 
-### resume
-```
-cd ~/tf-demo
-source tensorflow-dev/bin/activate
-python3
-```
